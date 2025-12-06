@@ -9,18 +9,18 @@ int main(){
 
     printf("This is freaking guessing game\n");
     do{
-        printf("\nguess your fucking number bruhh");
+        printf("guess your fucking number bruhh \n");
         scanf("%d",&guess);
         guesscount++;
 
         if(guess>random){
-            printf("Guessed number is bigger than the actual number\n");
+            printf("Guessed number is bigger than the actual number \n");
         }
         else if(guess<random){
-            printf("guessed number is smaller than the actual number\n");
+            printf("guessed number is smaller than the actual number \n");
         }
         else{
-            printf("Congrats you finally found the number after %d attempts",guesscount);
+            printf("Congrats you finally found the number after %d attempts \n",guesscount);
         }
     }while(guess!=random);
 
