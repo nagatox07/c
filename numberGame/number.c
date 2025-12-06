@@ -5,7 +5,8 @@ int main(){
     int random,guess;
     srand(time(NULL));
     int guesscount=0;
-    random=rand()*100+1;
+    random=rand() % 100 + 1;
+    printf("%d",random);
 
     printf("This is freaking guessing game\n");
     do{
@@ -20,7 +21,7 @@ int main(){
             printf("guessed number is smaller than the actual number \n");
         }
         else{
-            printf("Congrats you finally found the number after %d attempts \n",guesscount);
+            printf("Congrats you finally found the number after %d fucking attempts \n",guesscount);
         }
     }while(guess!=random);
 
